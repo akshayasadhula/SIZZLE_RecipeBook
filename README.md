@@ -1,1 +1,1 @@
-# SIZZLE REcipw Book Web Application
+# SIZZLE Recipe Book Web Application
