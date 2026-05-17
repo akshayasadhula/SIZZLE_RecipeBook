@@ -1,6 +1,6 @@
-# 🍳 Simmer — AI-Powered Recipe Book
+# 🍳 MISE — AI-Powered Recipe Book
 
-Simmer is a web application that lets you store, manage, and discover recipes — powered by AI. Built with vanilla HTML, CSS, and JavaScript with Firebase for real-time data and Groq AI for intelligent features.
+Mise is a web application that lets you store, manage, and discover recipes — powered by AI. Built with vanilla HTML, CSS, and JavaScript with Firebase for real-time data and Groq AI for intelligent features.
 
 ---
 
