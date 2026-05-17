@@ -1,6 +1,8 @@
-# 🍳 MISE — AI-Powered Recipe Book
+# 🍳 Mise — AI-Powered Recipe Book
 
-Mise is a web application that lets you store, manage, and discover recipes — powered by AI. Built with vanilla HTML, CSS, and JavaScript with Firebase for real-time data and Groq AI for intelligent features.
+**Mise** is a web application that lets you store, manage, and discover recipes — powered by AI. The name comes from the French culinary term *"Mise en Place"* meaning **"everything in its place"** — just like a professional chef organizes everything before cooking, this app helps you organize your recipes, discover new ones with AI, and plan meals with ingredients you already have.
+
+Built with vanilla HTML, CSS, and JavaScript with Firebase for real-time data and Groq AI for intelligent features.
 
 ---
 
@@ -9,11 +11,11 @@ Mise is a web application that lets you store, manage, and discover recipes — 
 ### Recipe Management
 - ➕ **Add Recipes** — Save recipes with name, category, ingredients and instructions
 - 📖 **View Recipes** — Browse all recipes in a clean card layout
-- ✏️ **Edit Recipes** — Update any recipe with a popup modal
+- ✏️ **Edit Recipes** — Update any recipe with a draggable popup modal
 - 🗑️ **Delete Recipes** — Remove recipes instantly
 - ❤️ **Favourite Recipes** — Save your favourite recipes to a separate collection
 - 🔗 **Share Recipes** — Share any recipe via link
-- 🔍 **Search & Filter** — Search by name or filter by category
+- 🔍 **Search & Filter** — Search by name or filter by category (Appetizer, Main Course, Dessert)
 
 ### AI Features (Powered by Groq)
 - ✨ **AI Recipe Fill** — Type a recipe name and AI auto-fills ingredients and instructions
@@ -43,12 +45,12 @@ Mise is a web application that lets you store, manage, and discover recipes — 
 ## 📁 Project Structure
 
 ```
-simmer/
+mise/
 ├── Home.html                # Landing page
 ├── addRecipe.html           # Add recipe page with AI features
 ├── viewrecipes.html         # View all recipes with search and filter
 ├── favouriterecipe.html     # Saved favourite recipes
-├── tips.html                # Tips and secrets page
+├── tips.html                # Tips and secrets with AI generator
 ├── ai.js                    # AI module — all Groq API calls
 ├── aiChat.js                # Floating chatbot widget
 ├── addRecipe.js             # Recipe form logic
@@ -106,20 +108,18 @@ Browser → Groq API → Response → UI
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/akshayasadhula/SIZZLE_RecipeBook.git
-cd SIZZLE_RecipeBook
+git clone https://github.com/akshayasadhula/SIMMER-AI-Powered-RecipeBook.git
+cd SIMMER-AI-Powered-RecipeBook
 ```
 
 ### 2. Firebase Setup
 - Go to [firebase.google.com](https://firebase.google.com)
-- Create a new project
-- Enable Firestore Database
+- Create a new project and enable Firestore Database
 - Replace the config in `firebaseConfig.js` with your own
 
 ### 3. Groq API Key
 - Go to [console.groq.com](https://console.groq.com)
-- Create a free account
-- Generate an API key
+- Create a free account and generate an API key
 - Open `ai.js` and replace:
 ```js
 const GROQ_API_KEY = "YOUR_GROQ_KEY_HERE";
@@ -128,7 +128,7 @@ with your actual key
 
 ### 4. Run
 - Open `Home.html` with **Live Server** in VS Code
-- Or just open the file directly in your browser
+- Or open directly in your browser
 
 ---
 
