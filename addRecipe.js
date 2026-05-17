@@ -1,9 +1,8 @@
-
-//finallll
-
-
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Guard: only run if recipeForm exists on this page
     const recipeForm = document.getElementById('recipeForm');
+    if (!recipeForm) return;
 
     recipeForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const docRef = await db.collection("recipes").add(recipe);
-            console.log("✅ Recipe added successfully! ID:", docRef.id);
+            console.log("✅ Recipe added! ID:", docRef.id);
             displayMessage('Recipe added successfully!', 'success');
             recipeForm.reset();
         } catch (error) {
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         msgDiv.textContent = message;
         msgDiv.className = `message ${type}`;
         document.body.appendChild(msgDiv);
-
         setTimeout(() => msgDiv.remove(), 3000);
     }
 });
